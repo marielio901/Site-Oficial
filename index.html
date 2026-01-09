@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mariélio | Data Scientist</title>
+  <meta name="description"
+    content="Currículo e portfólio bilíngue de Mariélio Rodrigues Fernandes - Cientista de Dados, BI & Machine Learning." />
+  <link rel="icon" href="imagens/logo.png" type="image/png" />
+
+  <!-- Google Fonts - Premium Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Animated Background Elements -->
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+  <div class="bg-glow bg-glow--3"></div>
+  <div class="bg-grid"></div>
+
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <div class="brand__logo">
+          <img src="imagens/logo.png" alt="Logo Mariélio" class="brand__logo-img" />
+        </div>
+        <div class="brand__text">
+          <div class="brand__name">Mariélio<span class="accent-dot">.</span></div>
+          <div class="brand__sub">Data Scientist</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#about" class="nav__link">
+          <i data-lucide="user" class="nav__icon"></i>
+          <span data-i18n="nav.about">Sobre</span>
+        </a>
+        <a href="#experience" class="nav__link">
+          <i data-lucide="briefcase" class="nav__icon"></i>
+          <span data-i18n="nav.experience">Experiência</span>
+        </a>
+        <a href="#education" class="nav__link">
+          <i data-lucide="graduation-cap" class="nav__icon"></i>
+          <span data-i18n="nav.education">Formação</span>
+        </a>
+        <a href="#certs" class="nav__link">
+          <i data-lucide="award" class="nav__icon"></i>
+          <span data-i18n="nav.certs">Certificações</span>
+        </a>
+        <a href="#skills" class="nav__link">
+          <i data-lucide="cpu" class="nav__icon"></i>
+          <span data-i18n="nav.skills">Habilidades</span>
+        </a>
+        <a href="#portfolio" class="nav__link">
+          <i data-lucide="folder-kanban" class="nav__icon"></i>
+          <span data-i18n="nav.portfolio">Portfólio</span>
+        </a>
+        <a href="#contact" class="nav__cta">
+          <i data-lucide="send" class="nav__icon"></i>
+          <span data-i18n="nav.contact">Contato</span>
+        </a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button id="langBtn" class="btn btn--lang" aria-label="Switch language" title="Switch language">
+          <i data-lucide="globe" class="btn__icon"></i>
+          <span>EN</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="wrap chips" aria-label="Quick navigation">
+      <a class="chip" href="#about">
+        <i data-lucide="user" class="chip__icon"></i>
+        <span data-i18n="nav.about">Sobre</span>
+      </a>
+      <a class="chip" href="#experience">
+        <i data-lucide="briefcase" class="chip__icon"></i>
+        <span data-i18n="nav.experience">Experiência</span>
+      </a>
+      <a class="chip" href="#education">
+        <i data-lucide="graduation-cap" class="chip__icon"></i>
+        <span data-i18n="nav.education">Formação</span>
+      </a>
+      <a class="chip" href="#certs">
+        <i data-lucide="award" class="chip__icon"></i>
+        <span data-i18n="nav.certs">Certificações</span>
+      </a>
+      <a class="chip" href="#skills">
+        <i data-lucide="cpu" class="chip__icon"></i>
+        <span data-i18n="nav.skills">Habilidades</span>
+      </a>
+      <a class="chip" href="#portfolio">
+        <i data-lucide="folder-kanban" class="chip__icon"></i>
+        <span data-i18n="nav.portfolio">Portfólio</span>
+      </a>
+      <a class="chip" href="#contact">
+        <i data-lucide="send" class="chip__icon"></i>
+        <span data-i18n="nav.contact">Contato</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__card">
+        <div class="hero__profile-row">
+          <div class="hero__avatar">
+            <img src="assets/profile.png" alt="Foto de Mariélio Rodrigues Fernandes" class="hero__avatar-img">
+          </div>
+          <div class="hero__intro">
+            <div class="hero__badge">
+              <div class="status-indicator"></div>
+              <span id="heroLocation" data-i18n="hero.location">Jaíba-MG</span>
+              <span class="separator">|</span>
+              <span class="available-text" data-i18n="hero.available">Disponível para Novos Projetos.</span>
+            </div>
+            <h1 class="hero__title" data-i18n="hero.name">MARIÉLIO RODRIGUES FERNANDES</h1>
+          </div>
+        </div>
+
+        <div class="hero__roles">
+          <span class="role-tag"><i data-lucide="brain" class="role-icon"></i> Data Scientist</span>
+          <span class="role-tag"><i data-lucide="bar-chart-2" class="role-icon"></i> Analytics</span>
+          <span class="role-tag"><i data-lucide="cpu" class="role-icon"></i> Machine Learning</span>
+          <span class="role-tag"><i data-lucide="database" class="role-icon"></i> Data Engineering</span>
+        </div>
+
+        <p class="hero__subtitle" data-i18n="hero.headline">Cientista de Dados | Data Analytics | Machine Learning | BI
+          & Engenharia de Dados</p>
+
+        <div class="hero__buttons">
+          <a id="btnLinkedIn" class="btn btn--social" href="#" target="_blank" rel="noreferrer">
+            <i data-lucide="linkedin" class="btn__icon"></i>
+            <span data-i18n="hero.linkedin">LinkedIn</span>
+          </a>
+          <a id="btnGitHub" class="btn btn--social" href="#" target="_blank" rel="noreferrer">
+            <i data-lucide="github" class="btn__icon"></i>
+            <span data-i18n="hero.github">GitHub</span>
+          </a>
+          <a id="btnYouTube" class="btn btn--social btn--youtube" href="#" target="_blank" rel="noreferrer">
+            <i data-lucide="youtube" class="btn__icon"></i>
+            <span data-i18n="hero.youtube">YouTube</span>
+          </a>
+          <a id="btnEmail" class="btn btn--social" href="#">
+            <i data-lucide="mail" class="btn__icon"></i>
+            <span data-i18n="hero.email">Email</span>
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="stat">
+            <div class="stat__icon">
+              <i data-lucide="phone" class="stat__lucide"></i>
+            </div>
+            <div class="stat__content">
+              <div class="stat__k">Phone</div>
+              <div class="stat__v" id="phoneText">+55 38 99130-7746</div>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat__icon">
+              <i data-lucide="mail" class="stat__lucide"></i>
+            </div>
+            <div class="stat__content">
+              <div class="stat__k">Email</div>
+              <div class="stat__v stat__v--break" id="emailText">marieliofernandes637@gmail.com</div>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat__icon">
+              <i data-lucide="target" class="stat__lucide"></i>
+            </div>
+            <div class="stat__content">
+              <div class="stat__k">Focus</div>
+              <div class="stat__v">Data • BI • Engineering</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__aside">
+        <div class="aside__card">
+          <div class="aside__header">
+            <i data-lucide="sparkles" class="aside__icon"></i>
+            <div class="aside__title" data-i18n="hero.highlights">Destaques</div>
+          </div>
+          <ul class="aside__list">
+            <li>
+              <i data-lucide="cloud" class="list-icon"></i>
+              <span>Microsoft Fabric + Databricks (Medallion).</span>
+            </li>
+            <li>
+              <i data-lucide="database" class="list-icon"></i>
+              <span>TOTVS (PIMS Cana, Datasul, Fluig) + SAP HANA.</span>
+            </li>
+            <li>
+              <i data-lucide="bar-chart-2" class="list-icon"></i>
+              <span>Power BI, SQL e automações em Python.</span>
+            </li>
+            <li>
+              <i data-lucide="bot" class="list-icon"></i>
+              <span>Automações e construção de bots com N8N, Selenium e Requests.</span>
+            </li>
+            <li>
+              <i data-lucide="truck" class="list-icon"></i>
+              <span>Supply Chain, Estoque, Logística e Operações Agrícolas.</span>
+            </li>
+            <li>
+              <i data-lucide="brain" class="list-icon"></i>
+              <span>Machine Learning + LLMs (casos práticos).</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Tech Stack Preview -->
+        <div class="aside__card aside__card--tech">
+          <div class="aside__header">
+            <i data-lucide="layers" class="aside__icon"></i>
+            <div class="aside__title">Stack Principal</div>
+          </div>
+          <div class="tech-stack">
+            <div class="tech-item" title="Python">
+              <svg class="tech-icon tech-icon--svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path
+                  d="M12 2C6.48 2 6 4.24 6 6v2h6v1H5c-2 0-3.5 1.5-3.5 4.5S3 18 5 18h2v-2.5c0-2 1.5-3.5 3.5-3.5h5c1.5 0 2.5-1 2.5-2.5V6c0-2-1.5-4-6-4zm-1.5 2.5a1 1 0 110 2 1 1 0 010-2z" />
+                <path
+                  d="M12 22c5.52 0 6-2.24 6-4v-2h-6v-1h7c2 0 3.5-1.5 3.5-4.5S21 6 19 6h-2v2.5c0 2-1.5 3.5-3.5 3.5h-5c-1.5 0-2.5 1-2.5 2.5V18c0 2 1.5 4 6 4zm1.5-2.5a1 1 0 110-2 1 1 0 010 2z" />
+              </svg>
+              <span class="tech-label">Python</span>
+            </div>
+            <div class="tech-item" title="SQL">
+              <svg class="tech-icon tech-icon--svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <ellipse cx="12" cy="6" rx="8" ry="3" />
+                <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
+                <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
+              </svg>
+              <span class="tech-label">SQL</span>
+            </div>
+            <div class="tech-item" title="Power BI">
+              <svg class="tech-icon tech-icon--svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="3" y="12" width="4" height="9" rx="1" />
+                <rect x="10" y="8" width="4" height="13" rx="1" />
+                <rect x="17" y="3" width="4" height="18" rx="1" />
+              </svg>
+              <span class="tech-label">Power BI</span>
+            </div>
+            <div class="tech-item" title="Databricks">
+              <svg class="tech-icon tech-icon--svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              <span class="tech-label">Databricks</span>
+            </div>
+            <div class="tech-item" title="Azure / Cloud">
+              <svg class="tech-icon tech-icon--svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.5">
+                <path d="M17.5 19H9a7 7 0 116.71-9h1.79a4.5 4.5 0 010 9z" />
+              </svg>
+              <span class="tech-label">Azure</span>
+            </div>
+            <div class="tech-item" title="Machine Learning">
+              <i data-lucide="brain" class="tech-icon"></i>
+              <span class="tech-label">ML / AI</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <div class="section__icon section__icon--about">
+          <i data-lucide="user-circle" class="section__lucide"></i>
+        </div>
+        <div class="section__title-wrap">
+          <h2 data-i18n="sections.about">Sobre</h2>
+          <p class="section__subtitle">Conheça minha trajetória profissional</p>
+        </div>
+      </div>
+      <div class="about-card">
+        <div class="about-card__icon">
+          <i data-lucide="quote" class="about-quote"></i>
+        </div>
+        <p class="about-text" data-i18n="about.text">
+          Sou cientista de dados com foco em eficiência e melhoria contínua, especialista em mensuração de processos e
+          desenho de amostragem para transformar operações em decisões confiáveis. Atuo com modelagem estatística e
+          matemática aplicada, do diagnóstico à validação, usando classificação, predição e testes de consistência para
+          reduzir incerteza e aumentar precisão. Construo soluções analíticas de ponta a ponta. Defino métricas e
+          indicadores, estruturo hipóteses, valido resultados com rigor e entrego sistemas que se encaixam no
+          ecossistema da empresa e geram impacto no dia a dia. Vou além de dashboards e automações superficiais. Meu
+          objetivo é criar produtos de dados e IA que respondem perguntas reais do negócio, geram insights imediatos e
+          evoluem com governança, performance e manutenção sustentável.
+        </p>
+      </div>
+      <div class="about-availability">
+        <div class="about-availability__card">
+          <div class="about-availability__head">
+            <div class="about-availability__icon">
+              <i data-lucide="sparkles" class="about-availability__lucide"></i>
+            </div>
+            <div>
+              <div class="about-availability__title" data-i18n="about.availability.title">Disponível para trabalhos</div>
+              <div class="about-availability__subtitle" data-i18n="about.availability.subtitle">
+                Freelancer, consultorias e serviços no Brasil e no exterior
+              </div>
+            </div>
+          </div>
+          <div class="about-availability__grid">
+            <div class="availability-card">
+              <div class="availability-card__icon">
+                <i data-lucide="briefcase" class="availability-card__lucide"></i>
+              </div>
+              <div class="availability-card__text" data-i18n="about.availability.freelance">
+                Freelancers e projetos sob demanda
+              </div>
+            </div>
+            <div class="availability-card">
+              <div class="availability-card__icon">
+                <i data-lucide="users" class="availability-card__lucide"></i>
+              </div>
+              <div class="availability-card__text" data-i18n="about.availability.consulting">
+                Consultorias e apoio estratégico
+              </div>
+            </div>
+            <div class="availability-card">
+              <div class="availability-card__icon">
+                <i data-lucide="map-pin" class="availability-card__lucide"></i>
+              </div>
+              <div class="availability-card__text" data-i18n="about.availability.brazil">
+                Presencial ou remoto em todo o Brasil
+              </div>
+            </div>
+            <div class="availability-card">
+              <div class="availability-card__icon">
+                <i data-lucide="globe" class="availability-card__lucide"></i>
+              </div>
+              <div class="availability-card__text" data-i18n="about.availability.global">
+                Remoto para clientes no exterior
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-services__card">
+          <div class="about-services__head">
+            <div class="about-services__icon">
+              <i data-lucide="list" class="about-services__lucide"></i>
+            </div>
+            <div class="about-services__title" data-i18n="about.services.title">Serviços Prestados</div>
+          </div>
+          <ul class="about-services__list">
+            <li>
+              <i data-lucide="database" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.data_mining">Data mining</span>
+            </li>
+            <li>
+              <i data-lucide="shuffle" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.etl">ETL/ELT</span>
+            </li>
+            <li>
+              <i data-lucide="bar-chart-2" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.analytics">data analytics</span>
+            </li>
+            <li>
+              <i data-lucide="trending-up" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.predictive">Análise Preditiva</span>
+            </li>
+            <li>
+              <i data-lucide="scan" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.vision">Visão computacional</span>
+            </li>
+            <li>
+              <i data-lucide="settings" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.automation_processes">Processos de automação</span>
+            </li>
+            <li>
+              <i data-lucide="bot" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.boots_dev">Desenvolvimento de Bots</span>
+            </li>
+            <li>
+              <i data-lucide="map" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.geoprocessing">Geoprocessamento</span>
+            </li>
+            <li>
+              <i data-lucide="map-pin" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.georeferencing">Georreferenciamento</span>
+            </li>
+            <li>
+              <i data-lucide="app-window" class="about-services__item-icon"></i>
+              <span data-i18n="about.services.dev">
+                Desenvolvimento de SaaS, ERP, CRM, dashboards e data apps.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section__head">
+        <div class="section__icon section__icon--exp">
+          <i data-lucide="briefcase" class="section__lucide"></i>
+        </div>
+        <div class="section__title-wrap">
+          <h2 data-i18n="sections.experience">Experiência Profissional</h2>
+          <p class="section__subtitle">Minha jornada no mercado de dados</p>
+        </div>
+      </div>
+      <div id="experienceList" class="timeline"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="section__head">
+        <div class="section__icon section__icon--edu">
+          <i data-lucide="graduation-cap" class="section__lucide"></i>
+        </div>
+        <div class="section__title-wrap">
+          <h2 data-i18n="sections.education">Formação Acadêmica</h2>
+          <p class="section__subtitle">Base teórica e conhecimento técnico</p>
+        </div>
+      </div>
+      <div id="educationList" class="grid grid--2"></div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certs">
+      <div class="section__head">
+        <div class="section__icon section__icon--cert">
+          <i data-lucide="award" class="section__lucide"></i>
+        </div>
+        <div class="section__title-wrap">
+          <h2 data-i18n="sections.certs">Certificações</h2>
+          <p class="section__subtitle">Reconhecimentos e validações técnicas</p>
+        </div>
+      </div>
+      <div id="certsList" class="grid grid--3"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section__head">
+        <div class="section__icon section__icon--skills">
+          <i data-lucide="cpu" class="section__lucide"></i>
+        </div>
+        <div class="section__title-wrap">
+          <h2 data-i18n="sections.skills">Habilidades Técnicas</h2>
+          <p class="section__subtitle">Ferramentas e tecnologias que domino</p>
+        </div>
+      </div>
+      <div id="skillsList" class="grid grid--2"></div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section class="section" id="portfolio">
+      <div class="section__head">
+        <div class="section__icon section__icon--portfolio">
+          <i data-lucide="folder-kanban" class="section__lucide"></i>
+        </div>
+        <div class="section__title-wrap">
+          <h2 data-i18n="sections.portfolio">Portfólio</h2>
+          <p class="section__subtitle">Projetos reais e cases de sucesso</p>
+        </div>
+      </div>
+      <div id="projectsGrid" class="grid grid--3"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <div class="section__icon section__icon--contact">
+          <i data-lucide="send" class="section__lucide"></i>
+        </div>
+        <div class="section__title-wrap">
+          <h2 data-i18n="sections.contact">Contato</h2>
+          <p class="section__subtitle">Vamos conversar sobre seu próximo projeto</p>
+        </div>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <i data-lucide="phone" class="contact-lucide"></i>
+          </div>
+          <div class="contact-card__content">
+            <div class="k" data-i18n="contact.phone">Telefone</div>
+            <div class="v" id="contactPhone">+55 38 99130-7746</div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <i data-lucide="mail" class="contact-lucide"></i>
+          </div>
+          <div class="contact-card__content">
+            <div class="k" data-i18n="contact.email">Email</div>
+            <a class="v linkbreak" id="contactEmail" href="#">marieliofernandes637@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-card__icon">
+            <i data-lucide="map-pin" class="contact-lucide"></i>
+          </div>
+          <div class="contact-card__content">
+            <div class="k" data-i18n="contact.location">Localização</div>
+            <div class="v" id="contactLocation">Jaíba-MG</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__actions">
+        <a id="contactLinkedIn" class="btn btn--social" href="#" target="_blank" rel="noreferrer">
+          <i data-lucide="linkedin" class="btn__icon"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a id="contactGitHub" class="btn btn--social" href="#" target="_blank" rel="noreferrer">
+          <i data-lucide="github" class="btn__icon"></i>
+          <span>GitHub</span>
+        </a>
+        <a id="contactYouTube" class="btn btn--social btn--youtube" href="#" target="_blank" rel="noreferrer">
+          <i data-lucide="youtube" class="btn__icon"></i>
+          <span>YouTube</span>
+        </a>
+      </div>
+
+      <p class="muted contact-note">
+        <i data-lucide="message-square" class="note-icon"></i>
+        <span data-i18n="contact.copy">Entre em contato para mais informações!🙂</span>
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__brand">
+          <i data-lucide="code-2" class="footer__icon"></i>
+          <span id="footerText"></span>
+        </div>
+        <div class="footer__social">
+          <a href="#" id="footerLinkedIn" class="footer__link" aria-label="LinkedIn">
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a href="#" id="footerGitHub" class="footer__link" aria-label="GitHub">
+            <i data-lucide="github"></i>
+          </a>
+          <a href="#" id="footerYouTube" class="footer__link footer__link--youtube" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+          </a>
+          <a href="#" id="footerEmail" class="footer__link" aria-label="Email">
+            <i data-lucide="mail"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-label="Project details">
+      <div class="modal__head">
+        <div class="modal__title-wrap">
+          <div class="modal__icon">
+            <i data-lucide="folder-open" class="modal__lucide"></i>
+          </div>
+          <div>
+            <div class="modal__title" id="modalTitle"></div>
+            <div class="modal__desc muted" id="modalDesc"></div>
+          </div>
+        </div>
+        <button class="btn btn--close" id="modalClose" aria-label="Close">
+          <i data-lucide="x"></i>
+        </button>
+      </div>
+
+      <div class="modal__body">
+        <div class="modal__block modal__block--gallery" id="modalGallery" data-multi="false">
+          <div class="modal__label">
+            <i data-lucide="images" class="label-icon"></i>
+            <span data-i18n="modal.gallery">Gallery</span>
+          </div>
+          <div class="slider">
+            <button class="slider__btn slider__btn--prev" type="button" id="sliderPrev" aria-label="Previous image">
+              <i data-lucide="chevron-left"></i>
+            </button>
+            <div class="slider__viewport">
+              <div class="slider__track" id="modalSlides"></div>
+            </div>
+            <button class="slider__btn slider__btn--next" type="button" id="sliderNext" aria-label="Next image">
+              <i data-lucide="chevron-right"></i>
+            </button>
+          </div>
+          <div class="slider__dots" id="modalDots"></div>
+        </div>
+        <div class="modal__block">
+          <div class="modal__label">
+            <i data-lucide="layers" class="label-icon"></i>
+            <span data-i18n="modal.stack">Stack</span>
+          </div>
+          <div class="badges" id="modalStack"></div>
+        </div>
+        <div class="modal__block" id="modalPointsBlock">
+          <div class="modal__label">
+            <i data-lucide="list-check" class="label-icon"></i>
+            <span data-i18n="modal.points">Pontos relevantes</span>
+          </div>
+          <div class="modal-points">
+            <div class="modal-point" id="modalPointProblem">
+              <div class="modal-point__head">
+                <i data-lucide="alert-triangle" class="modal-point__icon"></i>
+                <span data-i18n="modal.problem">Problema e causa</span>
+              </div>
+              <ul class="modal-point__list" id="modalPointProblemList"></ul>
+            </div>
+            <div class="modal-point" id="modalPointSolution">
+              <div class="modal-point__head">
+                <i data-lucide="wrench" class="modal-point__icon"></i>
+                <span data-i18n="modal.solution">Solucao aplicada</span>
+              </div>
+              <ul class="modal-point__list" id="modalPointSolutionList"></ul>
+            </div>
+            <div class="modal-point" id="modalPointInsights">
+              <div class="modal-point__head">
+                <i data-lucide="lightbulb" class="modal-point__icon"></i>
+                <span data-i18n="modal.insights">Insights gerados</span>
+              </div>
+              <ul class="modal-point__list" id="modalPointInsightsList"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="modal__block" id="modalLinksBlock">
+          <div class="modal__label">
+            <i data-lucide="external-link" class="label-icon"></i>
+            <span data-i18n="modal.links">Links</span>
+          </div>
+          <div class="modal__links" id="modalLinks"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="whatsapp-float" href="https://wa.me/5538991307746" target="_blank" rel="noreferrer"
+    aria-label="WhatsApp" title="WhatsApp">
+    <svg class="whatsapp-float__icon" viewBox="0 0 32 32" aria-hidden="true">
+      <path
+        d="M19.11 17.2c-.29-.15-1.71-.84-1.97-.94-.26-.1-.45-.15-.64.15-.19.29-.74.94-.91 1.13-.17.19-.34.21-.63.07-.29-.15-1.22-.45-2.33-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.44-.5.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.15-.64-1.54-.87-2.11-.23-.55-.46-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43 0 1.43 1.03 2.8 1.18 3 .15.19 2.02 3.08 4.89 4.32.68.29 1.22.46 1.63.59.69.22 1.32.19 1.82.12.55-.08 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.13-.26-.21-.55-.36z"
+        fill="currentColor" />
+      <path
+        d="M16.04 3C8.86 3 3 8.82 3 16c0 2.84.94 5.46 2.53 7.6L3 29l5.63-2.47A12.94 12.94 0 0016.04 29C23.18 29 29 23.18 29 16S23.18 3 16.04 3zm0 23.57c-2.17 0-4.3-.58-6.16-1.67l-.44-.26-3.34 1.47 1.45-3.25-.29-.47A10.53 10.53 0 015.46 16c0-5.82 4.74-10.54 10.58-10.54 5.82 0 10.54 4.72 10.54 10.54 0 5.84-4.72 10.57-10.54 10.57z"
+        fill="currentColor" />
+    </svg>
+  </a>
+
+  <script src="app.js"></script>
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
